@@ -1,7 +1,28 @@
 .App {
   text-align: center;
+  background-color: rgba(255,255,255,0.3);
+  margin: 50px 300px;
+  border-radius: 50px;
+}
+.Card{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 20px;
 }
 
+@media  (max-width:1012px) {
+  .Card{
+  display:block;
+  }
+  .App{
+    margin:10px 50px;
+  }
+}
+body{
+  text-align: center;
+  box-sizing: content-box;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -37,16 +58,13 @@
   }
 }
 
-.Card{
-  padding: 10px;
-  box-shadow: rgba(149,157,165,0.2) 0px 8px 24px;
-  border-radius: 20px;
-}
 
 .input-field{
-  border-radius: 10px;
+  border-radius: 50px;
   font-size: 20px;
   margin-right: 10px;
+  width:30%;
+  height: 30px;
 }
 
 .btn{
@@ -56,6 +74,6 @@
 }
 
 .image{
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
 }

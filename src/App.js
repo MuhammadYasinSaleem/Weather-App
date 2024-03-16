@@ -8,14 +8,16 @@ function App() {
   const weather=UseWeather();
   useEffect(()=>{
 weather.Fetchcurrentuserlocationdata();
-  },[])
+  },[weather.searchCity])
   return (
+    <main>
+      <h1>Weather App</h1>
+   <Input/><Button onClick={weather.FetchData} value="Search"/>
     <div className="App">
-   <h1>Weather App</h1>
-   <Input/><br></br>
-   <Button onClick={weather.FetchData} value="Search"/>
-   <Card/>
+     <Card/>
+   
     </div>
+    </main>
   );
 }
 
